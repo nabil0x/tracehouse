@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Tracehouse is a local-first terminal intelligence platform that captures commands, AI agent activity, Git context, and outputs so you can reconstruct how development work happened."
+    />
+    <meta name="theme-color" content="#050816" />
+    <title>Tracehouse | Memory for terminal work</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-left" aria-hidden="true"></div>
+    <div class="ambient ambient-right" aria-hidden="true"></div>
+    <div class="grid-overlay" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Tracehouse home">
+        <span class="brand-mark" aria-hidden="true">T</span>
+        <span class="brand-copy">
+          <strong>Tracehouse</strong>
+          <span>Terminal intelligence</span>
+        </span>
+      </a>
+
+      <nav class="nav">
+        <a href="#capture">Capture</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#deploy">Deploy</a>
+      </nav>
+
+      <a class="button button-ghost" href="#deploy">GitHub Pages ready</a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Local-first. Agent-aware. Secret-safe.</p>
+          <h1>Remember every command, reply, diff, and detour.</h1>
+          <p class="lede">
+            Tracehouse is a memory house for development work. It records terminal activity from
+            humans and AI agents, enriches it with Git context, redacts secrets, and turns it into
+            a searchable timeline you can reconstruct later.
+          </p>
+
+          <div class="cta-row">
+            <a class="button button-primary" href="#workflow">See how it works</a>
+            <a class="button button-secondary" href="#privacy">Privacy controls</a>
+          </div>
+
+          <div class="hero-pills" aria-label="Product highlights">
+            <span>Commands</span>
+            <span>AI chats</span>
+            <span>Stdout</span>
+            <span>Git</span>
+            <span>Summaries</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Tracehouse activity preview">
+          <div class="panel shell-panel">
+            <div class="panel-bar">
+              <span class="window-dot dot-red"></span>
+              <span class="window-dot dot-amber"></span>
+              <span class="window-dot dot-green"></span>
+              <span class="panel-label">Session reconstruction</span>
+            </div>
+
+            <div class="terminal">
+              <p><span class="prompt">$</span> codex "fix docker networking"</p>
+              <p class="muted">actor: agent / Codex CLI</p>
+              <p><span class="prompt">$</span> pytest -q</p>
+              <p class="error">exit 1 · auth test failed in 13.8s</p>
+              <p><span class="prompt">$</span> git commit -m "Fix auth bug"</p>
+              <p class="success">12 files changed · diff summarized</p>
+            </div>
+          </div>
+
+          <div class="signal-grid">
+            <article class="signal-card">
+              <p class="signal-kicker">Captured fields</p>
+              <p class="signal-value">command, cwd, timing, output</p>
+            </article>
+            <article class="signal-card">
+              <p class="signal-kicker">Actor identity</p>
+              <p class="signal-value">human, Claude Code, Cursor, Codex</p>
+            </article>
+            <article class="signal-card">
+              <p class="signal-kicker">Git awareness</p>
+              <p class="signal-value">branch, commit, files, diffs</p>
+            </article>
+            <article class="signal-card">
+              <p class="signal-kicker">Privacy controls</p>
+              <p class="signal-value">redaction, pause, exclude, export</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="metrics">
+        <article class="metric">
+          <span>Capture</span>
+          <strong>Every command</strong>
+          <p>stdout, stderr, timing, exit code, shell, host, and session grouping.</p>
+        </article>
+        <article class="metric">
+          <span>Reconstruct</span>
+          <strong>Every session</strong>
+          <p>Link commands to repositories, commits, and AI agent activity.</p>
+        </article>
+        <article class="metric">
+          <span>Search</span>
+          <strong>Structured + semantic</strong>
+          <p>Ask in plain English or filter by repository, shell, actor, or outcome.</p>
+        </article>
+        <article class="metric">
+          <span>Improve</span>
+          <strong>Daily memory</strong>
+          <p>Generate reports, error patterns, and agent effectiveness over time.</p>
+        </article>
+      </section>
+
+      <section class="section" id="capture">
+        <div class="section-head">
+          <p class="eyebrow">What it captures</p>
+          <h2>A structured ledger for how work really happened.</h2>
+          <p>
+            The landing page is static, but the product it describes is built for local capture:
+            terminal commands, agent conversations, Git metadata, and the outputs that explain why
+            a debugging session succeeded or failed.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Terminal events</h3>
+            <p>
+              Record command text, working directory, timestamps, duration, exit status, stdout,
+              stderr, shell, host, and session ID.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>AI agents</h3>
+            <p>
+              Tag human work separately from agent activity and keep agent sessions grouped for
+              later analysis.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Git context</h3>
+            <p>
+              Track repository name, branch, commit hash, file changes, commit messages, and diff
+              summaries automatically.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Semantic memory</h3>
+            <p>
+              Embed commands, errors, commits, and summaries so natural language questions become
+              searchable evidence.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="workflow">
+        <div class="section-head">
+          <p class="eyebrow">Workflow</p>
+          <h2>Install once. Work normally. Ask later.</h2>
+          <p>
+            Tracehouse is designed to disappear into the background while it captures the useful
+            parts of your day.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-step">
+            <span class="step-index">01</span>
+            <div>
+              <h3>Capture</h3>
+              <p>Shell hooks and collector events record commands as they happen.</p>
+            </div>
+          </article>
+          <article class="timeline-step">
+            <span class="step-index">02</span>
+            <div>
+              <h3>Enrich</h3>
+              <p>Git metadata, agent identity, outputs, and redaction findings are attached.</p>
+            </div>
+          </article>
+          <article class="timeline-step">
+            <span class="step-index">03</span>
+            <div>
+              <h3>Index</h3>
+              <p>Structured rows and embeddings power timeline views, search, and analytics.</p>
+            </div>
+          </article>
+          <article class="timeline-step">
+            <span class="step-index">04</span>
+            <div>
+              <h3>Reconstruct</h3>
+              <p>Ask how something happened and Tracehouse assembles the evidence into a story.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="questions-title">
+        <div class="section-head">
+          <p class="eyebrow">Questions it answers</p>
+          <h2 id="questions-title">The product is valuable when memory matters.</h2>
+        </div>
+
+        <div class="query-cloud" aria-label="Example questions">
+          <span>When did I install CUDA?</span>
+          <span>Which agent fixed Docker networking?</span>
+          <span>Show every failed pytest run in the last month.</span>
+          <span>How long did authentication debugging take?</span>
+          <span>What sequence of commands led to a successful deployment?</span>
+          <span>Which AI agent is best at fixing build errors?</span>
+          <span>Find the SSL certificate issue.</span>
+          <span>How did we resolve the login bug?</span>
+        </div>
+      </section>
+
+      <section class="section split" id="privacy">
+        <div class="section-head">
+          <p class="eyebrow">Privacy first</p>
+          <h2>Useful memory without handing over secrets.</h2>
+          <p>
+            The platform is built local-first, with redaction, exclusion, pause/resume, export, and
+            deletion controls from day one.
+          </p>
+        </div>
+
+        <div class="privacy-card">
+          <ul>
+            <li>Local SQLite storage for the MVP.</li>
+            <li>Secret detection for API keys, tokens, passwords, SSH keys, and cloud credentials.</li>
+            <li>Exclude directories and commands you do not want recorded.</li>
+            <li>Pause and resume recording at any time.</li>
+            <li>Export or delete all captured data on demand.</li>
+            <li>Encrypt local storage at rest when the environment supports it cleanly.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section deploy-band" id="deploy">
+        <div>
+          <p class="eyebrow">GitHub Actions deploy</p>
+          <h2>This landing page is static and can ship from GitHub Pages.</h2>
+          <p>
+            The public site lives in <code>site/</code>, so GitHub Actions can publish it without
+            requiring the local dashboard or backend to be online.
+          </p>
+        </div>
+
+        <div class="deploy-card">
+          <p>Workflow</p>
+          <code>push -&gt; build static site -&gt; upload artifact -&gt; deploy pages</code>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Tracehouse turns terminal activity into a coherent memory of development work.</p>
+      <p>&copy; 2026 Tracehouse</p>
+    </footer>
+  </body>
+</html>
