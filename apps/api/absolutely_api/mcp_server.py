@@ -28,7 +28,7 @@ from .query import (
 from .schema import SCHEMA_VERSION
 
 
-DEFAULT_DATABASE_PATH = Path.home() / ".local/share/absolutely/absolutely.db"
+DEFAULT_DATABASE_PATH = Path.home() / ".local/share/tracehouse/tracehouse.db"
 MAX_SEARCH_LIMIT = 50
 MAX_LIST_LIMIT = 100
 MAX_DETAIL_LIMIT = 100
@@ -438,7 +438,7 @@ def main(argv: list[str] | None = None) -> int:
         default=None,
         help=(
             "SQLite database path; defaults to ABSOLUTELY_DATABASE_PATH or "
-            "~/.local/share/absolutely/absolutely.db"
+            "~/.local/share/tracehouse/tracehouse.db"
         ),
     )
     args = parser.parse_args(argv)

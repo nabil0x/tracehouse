@@ -22,7 +22,7 @@ def _build_parser() -> argparse.ArgumentParser:
     serve = subcommands.add_parser("serve", help="run the FastAPI server")
     serve.add_argument("path", type=Path)
     serve.add_argument("--host", default="127.0.0.1")
-    serve.add_argument("--port", type=int, default=8000)
+    serve.add_argument("--port", type=int, default=18400)
 
     demo = subcommands.add_parser("record-demo", help="insert a redacted sample command")
     demo.add_argument("path", type=Path)

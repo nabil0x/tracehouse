@@ -83,6 +83,7 @@ def create_app(db_path: str | Path) -> FastAPI:
     def get_db() -> Iterator[sqlite3.Connection]:
         yield from _connection_factory(app.state.database_path)
 
+    @app.get("/health")
     @app.get("/healthz")
     def healthz(db: sqlite3.Connection = Depends(get_db)) -> dict[str, Any]:
         def count(table: str) -> int:

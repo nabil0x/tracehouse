@@ -40,7 +40,7 @@ function ConfigRow({
 }
 
 export default async function SettingsPage() {
-  const apiUrl = process.env.ABSOLUTELY_API_URL?.trim() || "http://127.0.0.1:8000";
+  const apiUrl = process.env.ABSOLUTELY_API_URL?.trim() || "http://127.0.0.1:18400";
   const collectorBin = process.env.TRACEHOUSE_COLLECTOR_BIN?.trim() || "tracehouse-collector";
   const host = process.env.ABSOLUTELY_HOST?.trim() || "auto-detected host";
   const stateDir = process.env.ABSOLUTELY_STATE_DIR?.trim() || "local state directory";

@@ -34,7 +34,7 @@ type DashboardShellProps = {
 };
 
 function apiLabel(): string {
-  return process.env.ABSOLUTELY_API_URL?.trim() || "http://127.0.0.1:8000";
+  return process.env.ABSOLUTELY_API_URL?.trim() || "http://127.0.0.1:18400";
 }
 
 export function DashboardShell({

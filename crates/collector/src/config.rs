@@ -21,7 +21,7 @@ impl CollectorConfig {
         let api_url = env::var("ABSOLUTELY_API_URL")
             .ok()
             .filter(|value| !value.trim().is_empty())
-            .unwrap_or_else(|| "http://127.0.0.1:8000".to_string());
+            .unwrap_or_else(|| "http://127.0.0.1:18400".to_string());
         let state_dir = env::var("ABSOLUTELY_STATE_DIR")
             .ok()
             .filter(|value| !value.trim().is_empty())
@@ -50,7 +50,7 @@ impl CollectorConfig {
 
     pub fn for_tests(state_dir: PathBuf) -> Self {
         Self {
-            api_url: "http://127.0.0.1:8000".to_string(),
+            api_url: "http://127.0.0.1:18400".to_string(),
             host: "test-host".to_string(),
             state_dir,
             paused: false,

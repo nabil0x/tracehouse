@@ -28,7 +28,7 @@ export default async function OverviewPage() {
   const { items: sessions, total, error } = await getSessions(8);
   const totals = summarizeSessions(sessions);
   const latest = sessions[0];
-  const apiUrl = process.env.ABSOLUTELY_API_URL?.trim() || "http://127.0.0.1:8000";
+  const apiUrl = process.env.ABSOLUTELY_API_URL?.trim() || "http://127.0.0.1:18400";
 
   return (
     <DashboardShell

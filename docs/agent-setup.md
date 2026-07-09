@@ -32,7 +32,7 @@ stays self-contained:
 
 ```bash
 export TRACEHOUSE_COLLECTOR_BIN="tracehouse-collector"
-export ABSOLUTELY_API_URL="http://127.0.0.1:8000"
+export ABSOLUTELY_API_URL="http://127.0.0.1:18400"
 export ABSOLUTELY_DATABASE_PATH="$HOME/.local/share/tracehouse/tracehouse.db"
 export ABSOLUTELY_STATE_DIR="$HOME/.local/state/tracehouse"
 mkdir -p "$(dirname "$ABSOLUTELY_DATABASE_PATH")" "$ABSOLUTELY_STATE_DIR"
@@ -55,7 +55,7 @@ tracehouse-api init-db "$ABSOLUTELY_DATABASE_PATH"
 Start the API in one terminal:
 
 ```bash
-tracehouse-api serve "$ABSOLUTELY_DATABASE_PATH" --host 127.0.0.1 --port 8000
+tracehouse-api serve "$ABSOLUTELY_DATABASE_PATH" --host 127.0.0.1 --port 18400
 ```
 
 Install the shell hooks after the collector binary is available:
@@ -90,7 +90,7 @@ Use these checks after setup and report the exact output or any failure:
 
 ```bash
 tracehouse-collector session-id
-curl http://127.0.0.1:8000/health
+curl http://127.0.0.1:18400/health
 ```
 
 Then open the dashboard at `http://127.0.0.1:3000`.

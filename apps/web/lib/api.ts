@@ -221,7 +221,7 @@ export type TimelineFilters = {
   offset?: number;
 };
 
-const FALLBACK_API_URL = "http://127.0.0.1:8000";
+const FALLBACK_API_URL = "http://127.0.0.1:18400";
 
 function apiBaseUrl(): string {
   return (
