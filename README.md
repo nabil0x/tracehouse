@@ -67,13 +67,16 @@ It records commands, terminal output, git context, and AI agent activity, then t
 Copy and paste this into your coding agent:
 
 ```text
-Set up Tracehouse end to end using docs/agent-setup.md as the source of truth.
-Read that file first, then install the collector, create the local database,
-start the API, install the shell hooks, start the dashboard, verify capture,
-and optionally start the MCP bridge for analysis.
+Use this exact setup guide and follow it in order:
+https://github.com/nabil0x/tracehouse/blob/master/docs/agent-setup.md
 
-Keep the setup local-first and privacy-safe. If you need to change anything
-outside the setup steps, explain why before doing it.
+Read the entire guide first. Then set up Tracehouse end to end without skipping
+steps: install the collector, create the local database, start the API, install
+the shell hooks, start the dashboard, verify capture, and optionally start the
+MCP bridge for analysis.
+
+Keep the setup local-first and privacy-safe. If a step is blocked, explain the
+blocker and ask before changing anything outside the guide.
 ```
 
 The guide includes the exact setup commands, environment variables, and

@@ -1,7 +1,11 @@
 # Tracehouse Agent Setup Guide
 
-Give this file to an AI coding agent when you want Tracehouse installed and
-running on your machine.
+If you are an AI coding agent, treat this guide as the source of truth.
+Execute it top to bottom and do not skip the verification steps.
+
+Canonical repository link:
+
+https://github.com/nabil0x/tracehouse/blob/master/docs/agent-setup.md
 
 ## Goal
 
@@ -82,7 +86,7 @@ tracehouse-mcp --db "$ABSOLUTELY_DATABASE_PATH"
 
 ## Verification
 
-Use these checks after setup:
+Use these checks after setup and report the exact output or any failure:
 
 ```bash
 tracehouse-collector session-id
@@ -97,3 +101,4 @@ Then open the dashboard at `http://127.0.0.1:3000`.
 - Do not switch the setup to cloud sync or remote storage for the MVP.
 - If the agent changes anything outside setup, it should explain why before
   proceeding.
+- If a command fails, stop and report the command and the exact error.
