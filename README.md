@@ -62,6 +62,12 @@ It records commands, terminal output, git context, and AI agent activity, then t
 4. Open the dashboard to search, review, and analyze your work.
 5. Ask questions about how a bug was fixed or how a workflow evolved.
 
+## Give This To Your Agent
+
+If you want an AI coding agent to set up Tracehouse end to end, give it
+[docs/agent-setup.md](docs/agent-setup.md). That guide includes the exact setup
+commands, environment variables, and verification steps.
+
 ## Collector Quick Start
 
 If the collector is already built or installed:
@@ -85,4 +91,3 @@ cargo run --manifest-path crates/collector/Cargo.toml -- session-id
 - The dashboard lives under `apps/web`.
 - The API and local analysis services live under `apps/api`.
 - The collector lives under `crates/collector`.
-
