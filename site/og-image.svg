@@ -1,0 +1,44 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Tracehouse</title>
+  <desc id="desc">Marketing preview for Tracehouse, a local-first terminal intelligence platform.</desc>
+  <rect width="1200" height="630" rx="36" fill="#050816"/>
+  <rect x="36" y="36" width="1128" height="558" rx="28" fill="#07101F" stroke="#FFFFFF" stroke-opacity="0.08" />
+  <circle cx="168" cy="128" r="110" fill="#7DF0D8" fill-opacity="0.12"/>
+  <circle cx="1030" cy="128" r="140" fill="#8EA7FF" fill-opacity="0.12"/>
+  <circle cx="990" cy="498" r="160" fill="#FFBF79" fill-opacity="0.08"/>
+
+  <text x="84" y="126" fill="#7DF0D8" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" letter-spacing="4">TRACEHOUSE</text>
+  <text x="84" y="208" fill="#F5F8FF" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="700" letter-spacing="-2">Memory for every command.</text>
+  <text x="84" y="268" fill="#C9D4EA" font-family="Arial, Helvetica, sans-serif" font-size="28">
+    Capture terminal activity, AI chats, Git context, and output in one private timeline.
+  </text>
+
+  <rect x="84" y="336" width="318" height="210" rx="24" fill="#0C1527" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <rect x="110" y="362" width="266" height="34" rx="17" fill="#7DF0D8" fill-opacity="0.12" stroke="#7DF0D8" stroke-opacity="0.18"/>
+  <text x="128" y="386" fill="#DFFAF4" font-family="Arial, Helvetica, sans-serif" font-size="20">How did we fix Docker networking?</text>
+  <text x="110" y="434" fill="#7DF0D8" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">09:12</text>
+  <text x="160" y="434" fill="#F5F8FF" font-family="Arial, Helvetica, sans-serif" font-size="18">codex "fix docker networking"</text>
+  <text x="110" y="470" fill="#7E8BA5" font-family="Arial, Helvetica, sans-serif" font-size="18">09:16 pytest -q</text>
+  <text x="110" y="506" fill="#79F1AD" font-family="Arial, Helvetica, sans-serif" font-size="18">09:41 git commit -m "Fix auth bug"</text>
+
+  <rect x="430" y="336" width="204" height="100" rx="24" fill="#0C1527" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <text x="456" y="374" fill="#FFBF79" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="2">DAILY SUMMARY</text>
+  <text x="456" y="410" fill="#F5F8FF" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Worked 6h 14m</text>
+  <text x="430" y="470" fill="#C9D4EA" font-family="Arial, Helvetica, sans-serif" font-size="18">1,243 commands - 7 commits - 3 repos</text>
+
+  <rect x="430" y="456" width="204" height="90" rx="24" fill="#0C1527" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <text x="456" y="490" fill="#8EA7FF" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="2">PRIVACY</text>
+  <text x="456" y="522" fill="#F5F8FF" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Redaction + export</text>
+
+  <rect x="656" y="336" width="460" height="210" rx="24" fill="#0C1527" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <text x="684" y="372" fill="#7DF0D8" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="2">WHAT IT CAPTURES</text>
+  <text x="684" y="410" fill="#F5F8FF" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">Commands</text>
+  <text x="892" y="410" fill="#C9D4EA" font-family="Arial, Helvetica, sans-serif" font-size="26">stdout</text>
+  <text x="1010" y="410" fill="#C9D4EA" font-family="Arial, Helvetica, sans-serif" font-size="26">Git</text>
+  <text x="684" y="452" fill="#F5F8FF" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">Agent chats</text>
+  <text x="892" y="452" fill="#C9D4EA" font-family="Arial, Helvetica, sans-serif" font-size="26">Search</text>
+  <text x="1010" y="452" fill="#C9D4EA" font-family="Arial, Helvetica, sans-serif" font-size="26">Summaries</text>
+  <text x="684" y="494" fill="#F5F8FF" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">Git history</text>
+  <text x="892" y="494" fill="#C9D4EA" font-family="Arial, Helvetica, sans-serif" font-size="26">Agents</text>
+  <text x="1010" y="494" fill="#C9D4EA" font-family="Arial, Helvetica, sans-serif" font-size="26">Private</text>
+</svg>
