@@ -1,0 +1,17 @@
+# Local-only development docs and planning notes.
+AGENTS.md
+MASTERPLAN.md
+agent.md
+.local/
+.codex/
+project_main_idea.txt
+
+# Build and cache artifacts.
+target/
+**/node_modules/
+**/.next/
+**/__pycache__/
+**/.pytest_cache/
+**/.mypy_cache/
+*.py[cod]
+*.tsbuildinfo
