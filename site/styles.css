@@ -772,18 +772,30 @@ main {
     padding: 12px 14px;
     border-radius: 22px;
     top: 10px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "brand cta"
+      "nav nav";
+    align-items: center;
+    row-gap: 12px;
+  }
+
+  .brand {
+    grid-area: brand;
   }
 
   .nav {
+    grid-area: nav;
     width: 100%;
-    order: 3;
     justify-content: space-between;
-    gap: 12px;
+    gap: 10px;
   }
 
   .button-small {
-    width: 100%;
+    grid-area: cta;
+    width: auto;
+    padding-inline: 16px;
   }
 
   main {
@@ -828,6 +840,70 @@ main {
   .footer {
     width: calc(100% - 24px);
     flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .topbar {
+    padding: 10px 12px;
+    row-gap: 10px;
+  }
+
+  .brand-mark {
+    width: 40px;
+    height: 40px;
+  }
+
+  .brand-copy strong {
+    font-size: 0.92rem;
+  }
+
+  .brand-copy span {
+    display: none;
+  }
+
+  .nav {
+    gap: 8px;
+    font-size: 0.92rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.7rem, 16vw, 4.2rem);
+  }
+
+  .lede {
+    font-size: 1rem;
+  }
+
+  .hero-actions {
+    gap: 10px;
+  }
+
+  .button {
+    min-height: 44px;
+  }
+
+  .button-small {
+    min-height: 40px;
+  }
+
+  .chip-row span,
+  .trust-strip span {
+    min-height: 34px;
+    padding-inline: 12px;
+    font-size: 0.92rem;
+  }
+
+  .hero-facts article,
+  .feature-card,
+  .query-card,
+  .privacy-callout,
+  .install-steps article,
+  .install-cta,
+  .session-card,
+  .insight-card,
+  .mini-bento article {
+    border-radius: 18px;
   }
 }
 
